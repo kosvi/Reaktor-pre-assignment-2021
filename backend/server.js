@@ -12,12 +12,18 @@ Logger.log("Starting server", 0);
 // But since this is just an example to showcase coding skills, we don't want
 // to keep polling Reaktor servers all the time, do we? ;)
 var latestVisit = Date.now();
+// and this sets how often we will update our cache,
+// for now we update cache if data is older than 5 minutes
+const updateFrequenzy = 5 * 60 * 1000;
 
 /*
   we provide /api/products/:category as an endpoint
 */
 app.get("/api/products/:category", (req, res) => {
     latestVisit = Date.now();
+    if (latestVisit > (LocalCache.timestamp + updateFrequenzy)) {
+        Logger.log("Old data served at: /api/products/" + req.params["category"], 0);
+    }
     let failure = true;
     // Let's first check that given category is good
     if (allowedCategories.includes(req.params["category"])) {
@@ -51,7 +57,7 @@ const server = app.listen(5000, () => {
   user on the site as it would be pointless to update a pre-assignment constantly
   when nobody is using it. Useless stress for the Reaktor-server...
 */
-const updateFrequenzy = 5 * 60 * 1000;
+
 // Update once on start!
 LocalCache.updateCache();
 var timer = setInterval(() => {

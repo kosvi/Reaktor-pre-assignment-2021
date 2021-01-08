@@ -4,8 +4,7 @@
 // that has been parsed together from 
 // the old bad api
 
-// const allowedCategories = ["gloves", "facemasks", "beanies"];
-const allowedCategories = ["beanies", "facemasks"];
+const allowedCategories = ["beanies", "facemasks", "gloves"];
 
 module.exports = {
     allowedCategories: allowedCategories,
