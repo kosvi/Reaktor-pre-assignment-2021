@@ -1,0 +1,34 @@
+2021-01-08T18:44:42.857Z [NORMAL] Updating LocalCache
+2021-01-08T18:44:44.125Z [PERFORMANCE] Calculated manufacturers for beanies in 0.7264990000985563 milliseconds.
+2021-01-08T18:44:44.128Z [PERFORMANCE] Calculated manufacturers for facemasks in 2.8558150003664196 milliseconds.
+2021-01-08T18:44:55.230Z [PERFORMANCE] Fetch availability info of okkau in 11102.457835999783 milliseconds. 
+2021-01-08T18:45:14.594Z [PERFORMANCE] Fetch availability info of laion in 19352.697110000066 milliseconds. 
+2021-01-08T18:45:26.938Z [PERFORMANCE] Fetch availability info of laion in 12343.36245699972 milliseconds. 
+2021-01-08T18:45:42.315Z [PERFORMANCE] Fetch availability info of ippal in 15365.168184999842 milliseconds. 
+2021-01-08T18:45:58.234Z [PERFORMANCE] Fetch availability info of abiplos in 15907.577705999836 milliseconds. 
+2021-01-08T18:46:09.379Z [PERFORMANCE] Fetch availability info of umpante in 11134.780401999597 milliseconds. 
+2021-01-08T18:46:22.557Z [PERFORMANCE] Fetch availability info of juuran in 13159.054400000256 milliseconds. 
+2021-01-08T18:46:22.574Z [PERFORMANCE] Added availability status for beanies in 7.346247999928892 milliseconds.
+2021-01-08T18:46:22.581Z [PERFORMANCE] Added availability status for facemasks in 7.091366000007838 milliseconds.
+2021-01-08T18:46:22.581Z [PERFORMANCE] Fetch products from bad api in 99722.92849100009 milliseconds
+2021-01-08T18:49:40.624Z [NORMAL] Updating LocalCache
+2021-01-08T18:49:41.717Z [PERFORMANCE] Calculated manufacturers for beanies in 0.7346369996666908 milliseconds.
+2021-01-08T18:49:41.720Z [PERFORMANCE] Calculated manufacturers for facemasks in 2.6549769998528063 milliseconds.
+2021-01-08T18:49:52.652Z [PERFORMANCE] Fetch availability info of okkau in 10931.424120000098 milliseconds. 
+2021-01-08T18:51:03.117Z [NORMAL] Starting server
+2021-01-08T18:51:03.121Z [NORMAL] Updating LocalCache
+2021-01-08T18:51:04.247Z [PERFORMANCE] Calculated manufacturers for beanies in 0.7360840002074838 milliseconds.
+2021-01-08T18:51:04.250Z [PERFORMANCE] Calculated manufacturers for facemasks in 2.7314089997671545 milliseconds.
+2021-01-08T18:51:14.521Z [REQUEST] Send 404 for: /api/products/facemasks
+2021-01-08T18:51:22.379Z [PERFORMANCE] Fetch availability info of okkau in 18129.213052000385 milliseconds. 
+2021-01-08T18:51:40.960Z [PERFORMANCE] Fetch availability info of laion in 18569.900946000125 milliseconds. 
+2021-01-08T18:51:59.295Z [PERFORMANCE] Fetch availability info of laion in 18335.4773289999 milliseconds. 
+2021-01-08T18:52:16.833Z [PERFORMANCE] Fetch availability info of ippal in 17523.639312000014 milliseconds. 
+2021-01-08T18:52:37.440Z [PERFORMANCE] Fetch availability info of abiplos in 20595.66473599989 milliseconds. 
+2021-01-08T18:52:57.812Z [PERFORMANCE] Fetch availability info of umpante in 20360.556654999964 milliseconds. 
+2021-01-08T18:53:17.289Z [PERFORMANCE] Fetch availability info of juuran in 19466.953598999884 milliseconds. 
+2021-01-08T18:53:17.315Z [PERFORMANCE] Added availability status for beanies in 13.461986999958754 milliseconds.
+2021-01-08T18:53:17.325Z [PERFORMANCE] Added availability status for facemasks in 10.172595000360161 milliseconds.
+2021-01-08T18:53:17.325Z [PERFORMANCE] Fetch products from bad api in 134204.30683499994 milliseconds
+2021-01-08T18:55:33.238Z [REQUEST] Success for: /api/products/facemasks
+2021-01-08T18:55:50.220Z [REQUEST] Success for: /api/products/beanies
