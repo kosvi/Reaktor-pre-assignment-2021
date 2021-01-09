@@ -14,7 +14,7 @@ Build docker image:
 
 ```
 cd Reaktor-pre-assignment-2021
-Docker build -t <image-name-of-choice> .
+docker build -t <image-name-of-choice> .
 ```
 
 Create a file for logs:
