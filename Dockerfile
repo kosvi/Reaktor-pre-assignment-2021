@@ -11,6 +11,7 @@ FROM node:alpine
 
 WORKDIR /usr/app
 COPY backend .
+RUN npm install
 
 # and copy the frontend from previous image
 COPY --from=build-stage /usr/app/build /usr/app/static
