@@ -13,6 +13,7 @@ git clone https://github.com/kosvi/Reaktor-pre-assignment-2021.git
 Build docker image:
 
 ```
+cd Reaktor-pre-assignment-2021
 Docker build -t <image-name-of-choice> .
 ```
 
