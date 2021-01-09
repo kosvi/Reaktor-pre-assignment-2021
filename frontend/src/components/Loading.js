@@ -1,16 +1,7 @@
-import React, { useState, useEffect } from "react";
-// https://www.npmjs.com/package/react-loader-spinner
+import React from "react";
 import Loader from "react-loader-spinner";
 
 export default function Loading(props) {
-
-    const [msg, setMsg] = useState('');
-
-    useEffect(() => {
-        if (props.message) {
-            setMsg(props.message);
-        }
-    }, []);
 
     return (
         <div style={{
@@ -35,8 +26,8 @@ export default function Loading(props) {
                 minWidth: "20vw",
                 alignItems: "center",
             }}>
-                <p>{msg}</p>
-		<Loader type="TailSpin" color="#000000" height={80} width={80} />
+                <p>{props.message}</p>
+                <Loader type="TailSpin" color="#000000" height={80} width={80} />
             </div>
         </div>
     )

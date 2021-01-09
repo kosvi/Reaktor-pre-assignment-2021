@@ -9,22 +9,21 @@ export default function ProductList(props) {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const fetchProducts = async () => {
-        if (Pages.includes(props.category)) {
-            // ok, valid category
-            try {
-                const productList = await DatabaseAccessApi.getProducts(props.category);
-                if (productList != null) {
-                    setProducts(productList);
-                    setLoading(false);
+    useEffect(() => {
+        const fetchProducts = async () => {
+            if (Pages.includes(props.category)) {
+                // ok, valid category
+                try {
+                    const productList = await DatabaseAccessApi.getProducts(props.category);
+                    if (productList != null) {
+                        setProducts(productList);
+                        setLoading(false);
+                    }
+                } catch (error) {
+                    console.log(error);
                 }
-            } catch (error) {
-                console.log(error);
             }
         }
-    }
-
-    useEffect(() => {
         fetchProducts();
     }, [])
 
