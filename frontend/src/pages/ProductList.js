@@ -25,7 +25,7 @@ export default function ProductList(props) {
             }
         }
         fetchProducts();
-    }, [])
+    }, [props.category])
 
     if (loading) {
         return (
