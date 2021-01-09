@@ -36,22 +36,31 @@ export default function ProductList(props) {
 
     return (
         <div>
+            <h1>{props.category}</h1>
             <table>
                 <thead>
                     <tr>
                         <th>Name</th>
+                        <th>Color</th>
+                        <th>Price</th>
                         <th>Manufacturer</th>
                         <th>Availability</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        products.map((product) =>
-                            <tr key={product.id}><td>{product.name}</td><td>{product.manufacturer}</td><td>{product.availability}</td></tr>
-                        )
+                        products.map((product) => (
+                            <tr key={product.id}>
+                                <td>{product.name}</td>
+                                <td>{product.color}</td>
+                                <td>{product.price}</td>
+                                <td>{product.manufacturer}</td>
+                                <td>{product.availability}</td>
+                            </tr>
+                        ))
                     }
                 </tbody>
             </table>
-        </div>
+        </div >
     )
 }
