@@ -33,9 +33,10 @@ export default function ProductList(props) {
             if (i > 0) {
                 colorText += ", " + colors[i];
             } else {
-                colorText += color[i];
+                colorText += colors[i];
             }
         }
+        return colorText;
     }
 
     if (loading) {
