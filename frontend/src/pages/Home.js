@@ -2,8 +2,9 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <div>
+        <div style={{ textAlign: "left", maxWidth: "400px" }}>
             <h1>Home</h1>
+            <br /><br />
             This is my solution for Reaktor <a href="https://www.reaktor.com/junior-dev-assignment/">pre-assignment</a>
             for junior developer 2021. <br /><br />
             <span style={{ color: "red" }}>Backend DOES NOT keep cache up-to-date</span> all the time, so it may take a couple of minutes to get fresh data
