@@ -30,3 +30,8 @@ docker run -d -v "$(pwd)/backend.log:/usr/app/logs/backend.log" -p 80:5000 <imag
 ```
 
 Website can be found from path /static
+
+## Live demo
+
+Live demo can be found at: [reaktor.codecache.eu](https://reaktor.codecache.eu/static)
+
