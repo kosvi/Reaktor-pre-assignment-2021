@@ -27,6 +27,17 @@ export default function ProductList(props) {
         fetchProducts();
     }, [props.category])
 
+    const listColors = (colors) => {
+        var colorText = "";
+        for (let i = 0; i < colors.length; i++) {
+            if (i > 0) {
+                colorText += ", " + colors[i];
+            } else {
+                colorText += color[i];
+            }
+        }
+    }
+
     if (loading) {
         return (
             <Loading message="Loading data" />
@@ -51,7 +62,7 @@ export default function ProductList(props) {
                         products.map((product) => (
                             <tr key={product.id}>
                                 <td>{product.name}</td>
-                                <td>{product.color}</td>
+                                <td>{listColors(product.color)}</td>
                                 <td>{product.price}</td>
                                 <td>{product.manufacturer}</td>
                                 <td>{product.availability}</td>
