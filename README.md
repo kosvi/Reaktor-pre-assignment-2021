@@ -29,3 +29,4 @@ Run server:
 docker run -d -v "$(pwd)/backend.log:/usr/app/logs/backend.log" -p 80:5000 <image-name-of-choice>
 ```
 
+Website can be found from path /static

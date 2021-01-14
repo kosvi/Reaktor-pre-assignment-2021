@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
     return (
-        <div style={{ textAlign: "left", maxWidth: "400px" }}>
+        <div style={{ textAlign: "left", maxWidth: "400px", marginLeft: "auto", marginRight: "auto" }}>
             <h1>Home</h1>
             <br /><br />
             This is my solution for Reaktor <a href="https://www.reaktor.com/junior-dev-assignment/">pre-assignment</a>
