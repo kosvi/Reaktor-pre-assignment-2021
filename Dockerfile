@@ -11,7 +11,11 @@ FROM node:alpine
 
 WORKDIR /usr/app
 COPY backend .
-RUN npm install && adduser -D app
+RUN npm install && \
+    adduser -D app && \
+    mkdir -p /usr/app/logs && \
+    chown -R app /usr/app/logs
+
 
 # and copy the frontend from previous image
 COPY --from=build-stage /usr/app/build /usr/app/static

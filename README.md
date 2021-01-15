@@ -17,10 +17,19 @@ cd Reaktor-pre-assignment-2021
 docker build -t <image-name-of-choice> .
 ```
 
+Run server: 
+
+```
+docker run -d -p 80:5000 <image-name-of-choice>
+```
+
+### With permanent logs
+
 Create a file for logs:
 
 ```
 touch backend.log
+chmod 644 backend.log
 ```
 
 Run server: 
@@ -28,6 +37,8 @@ Run server:
 ```
 docker run -d -v "$(pwd)/backend.log:/usr/app/logs/backend.log" -p 80:5000 <image-name-of-choice>
 ```
+
+## Access
 
 Website can be found from path /static
 
