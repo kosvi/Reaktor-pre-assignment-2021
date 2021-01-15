@@ -29,7 +29,7 @@ Create a file for logs:
 
 ```
 touch backend.log
-chmod 644 backend.log
+chmod 666 backend.log
 ```
 
 Run server: 
